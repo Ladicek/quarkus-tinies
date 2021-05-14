@@ -1,4 +1,4 @@
-package cz.ladicek.quarkus.tiny.rest.client;
+package cz.ladicek.quarkus.tiny.rest.client.errors;
 
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
