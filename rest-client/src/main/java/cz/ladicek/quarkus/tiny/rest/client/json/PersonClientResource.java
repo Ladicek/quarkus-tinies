@@ -13,13 +13,10 @@ import java.util.List;
 public class PersonClientResource {
     @GET
     public String get() {
-        Client client = ClientBuilder.newClient();
-        try {
+        try (Client client = ClientBuilder.newClient()) {
             Response response = client.target("http://localhost:8080/person").request().get();
             List<Person> persons = response.readEntity(new GenericType<>() {});
             return persons.toString();
-        } finally {
-            client.close();
         }
     }
 }

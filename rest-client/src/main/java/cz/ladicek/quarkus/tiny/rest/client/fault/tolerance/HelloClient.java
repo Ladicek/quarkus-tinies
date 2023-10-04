@@ -1,6 +1,5 @@
 package cz.ladicek.quarkus.tiny.rest.client.fault.tolerance;
 
-import io.smallrye.common.annotation.NonBlocking;
 import io.smallrye.mutiny.Uni;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -13,7 +12,6 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 public interface HelloClient {
     @GET
     @Path("/ft-hello")
-    @NonBlocking
     @Fallback(HelloFallback.class)
     //@Fallback(fallbackMethod = "fallback")
     Uni<String> hello();
