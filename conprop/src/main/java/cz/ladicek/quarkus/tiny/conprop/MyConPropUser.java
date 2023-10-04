@@ -1,10 +1,10 @@
 package cz.ladicek.quarkus.tiny.conprop;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import org.eclipse.microprofile.context.ManagedExecutor;
 import org.eclipse.microprofile.context.ThreadContext;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.util.concurrent.CompletableFuture;
 
 @ApplicationScoped

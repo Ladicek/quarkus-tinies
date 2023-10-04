@@ -1,11 +1,10 @@
 package cz.ladicek.quarkus.tiny.rest.client.fault.tolerance;
 
+import jakarta.inject.Inject;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
-
-import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
 
 @Path("/ft-client")
 public class ClientResource {

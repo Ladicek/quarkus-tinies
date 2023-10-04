@@ -2,15 +2,12 @@ package cz.ladicek.quarkus.tiny.rest.client.fault.tolerance;
 
 import io.smallrye.common.annotation.NonBlocking;
 import io.smallrye.mutiny.Uni;
-import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 import org.eclipse.microprofile.faulttolerance.ExecutionContext;
 import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.FallbackHandler;
-import org.eclipse.microprofile.faulttolerance.Timeout;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
-
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
 
 @RegisterRestClient(baseUri = "http://localhost:8080")
 public interface HelloClient {

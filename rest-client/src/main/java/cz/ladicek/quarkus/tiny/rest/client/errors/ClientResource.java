@@ -1,13 +1,12 @@
 package cz.ladicek.quarkus.tiny.rest.client.errors;
 
+import jakarta.inject.Inject;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.WebApplicationException;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
 import org.jboss.resteasy.client.exception.WebApplicationExceptionWrapper;
-
-import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.WebApplicationException;
 
 @Path("/client")
 public class ClientResource {
@@ -22,7 +21,7 @@ public class ClientResource {
         try {
             return client.hello();
         } catch (WebApplicationException e) {
-            log.error("Hello service failed: "+ WebApplicationExceptionWrapper.unwrap(e).getResponse().readEntity(String.class));
+            log.error("Hello service failed: " + WebApplicationExceptionWrapper.unwrap(e).getResponse().readEntity(String.class));
             return "FAILED";
         }
     }

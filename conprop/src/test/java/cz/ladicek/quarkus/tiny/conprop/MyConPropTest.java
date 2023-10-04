@@ -1,10 +1,9 @@
 package cz.ladicek.quarkus.tiny.conprop;
 
 import io.quarkus.test.junit.QuarkusTest;
+import jakarta.enterprise.context.control.ActivateRequestContext;
+import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
-
-import javax.enterprise.context.control.ActivateRequestContext;
-import javax.inject.Inject;
 
 @QuarkusTest
 public class MyConPropTest {

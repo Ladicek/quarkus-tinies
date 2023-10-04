@@ -1,7 +1,8 @@
 package cz.ladicek.quarkus.tiny.rest.client.json;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+
 import java.util.Arrays;
 import java.util.List;
 

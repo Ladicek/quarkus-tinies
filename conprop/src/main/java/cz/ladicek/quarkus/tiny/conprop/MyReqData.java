@@ -1,7 +1,8 @@
 package cz.ladicek.quarkus.tiny.conprop;
 
-import javax.annotation.PreDestroy;
-import javax.enterprise.context.RequestScoped;
+import jakarta.annotation.PreDestroy;
+import jakarta.enterprise.context.RequestScoped;
+
 import java.util.HashSet;
 import java.util.Set;
 

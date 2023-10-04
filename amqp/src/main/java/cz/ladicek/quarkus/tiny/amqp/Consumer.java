@@ -1,9 +1,9 @@
 package cz.ladicek.quarkus.tiny.amqp;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
 import org.eclipse.microprofile.reactive.messaging.Message;
 
-import javax.enterprise.context.ApplicationScoped;
 import java.util.concurrent.CompletionStage;
 
 @ApplicationScoped

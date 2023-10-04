@@ -2,10 +2,10 @@ package cz.ladicek.quarkus.tiny.kafka;
 
 import io.smallrye.mutiny.Multi;
 import io.smallrye.reactive.messaging.kafka.KafkaRecord;
+import jakarta.enterprise.context.ApplicationScoped;
 import org.eclipse.microprofile.reactive.messaging.Message;
 import org.eclipse.microprofile.reactive.messaging.Outgoing;
 
-import javax.enterprise.context.ApplicationScoped;
 import java.time.Duration;
 
 @ApplicationScoped
